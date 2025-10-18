@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 `;
                 document.head.appendChild(style);
 
-                // ✅ Continue button → index.html
+                // Continue button → index.html
                 document.getElementById('continueBtn').addEventListener('click', () => {
                     // Hide the logout button instantly
                     document.getElementById('logoutBtn').style.display = 'none';
@@ -93,7 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     setTimeout(() => { window.location.href = 'index.html'; }, 400);
                 });
 
-                // 🚪 Logout button → logout.php
+                // Logout button → logout.php
                 document.getElementById('logoutBtn').addEventListener('click', () => {
                     // Hide the continue button instantly
                     document.getElementById('continueBtn').style.display = 'none';
